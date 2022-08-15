@@ -4,8 +4,8 @@
   "description": "Contains the code for the smart contracts, compiled ABI and type defenitions by TypeChain",
   "scripts": {
     "test": "hardhat test:jest",
-    "build": "Thardhat compile && ts-node scripts/types.ts",
-    "deploy": "hardhat run --network rinkeby scripts/deploy.ts"
+    "build": "hardhat compile && ts-node scripts/types.ts",
+    "deploy": "hardhat run --network goerli scripts/deploy.ts"
   },
   "devDependencies": {
     "@ethersproject/providers": "^5.6.2",

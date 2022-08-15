@@ -3,7 +3,7 @@ import { runTypeChain, glob } from "typechain";
 async function main() {
 	const cwd = process.cwd();
 	// find all files matching the glob
-	const allFiles = glob(cwd, [`./artifacts/contracts/**/*.json`]).filter(
+	const allFiles = glob(cwd, ["./artifacts/contracts/**/*.json"]).filter(
 		(x) => !x.includes(".dbg"),
 	);
 

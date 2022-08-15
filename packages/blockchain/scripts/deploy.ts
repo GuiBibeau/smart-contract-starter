@@ -4,12 +4,12 @@ import { config } from "dotenv";
 config();
 
 async function main() {
-	const WenPaycheck = await ethers.getContractFactory("WenPaycheck");
-	const wenPaycheck = await WenPaycheck.deploy();
+	const Contract = await ethers.getContractFactory("MyContract");
+	const contract = await Contract.deploy();
 
-	await wenPaycheck.deployed();
+	await contract.deployed();
 
-	console.log("Greeter deployed to:", wenPaycheck.address);
+	console.log("contract deployed to:", contract.address);
 }
 
 main().catch((error) => {

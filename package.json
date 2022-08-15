@@ -1,17 +1,16 @@
 {
-  "name": "wen-paycheck",
-  "description": "A paycheck service for ethereum",
+  "name": "project",
+  "description": "A dapp project!",
   "private": true,
   "workspaces": [
     "packages/*"
   ],
   "scripts": {
-    "build": "turbo run build --scope=app --include-dependencies --no-deps",
+    "build": "turbo run build --include-dependencies --no-deps",
     "dev": "turbo run dev",
     "deploy": "turbo run deploy"
   },
   "devDependencies": {
-    "@types/node": "^18.7.3",
     "turbo": "^1.4.3"
   }
 }
